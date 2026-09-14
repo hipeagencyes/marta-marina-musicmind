@@ -182,6 +182,9 @@
     prog2:         { variant: 'program', accent: '#5E7A87', side: 'bottom' },
     prog3:         { variant: 'program', accent: '#3C5A5E', side: 'bottom' },
     prog4:         { variant: 'program', accent: '#6E8A96', side: 'bottom' },
+    prog5:         { variant: 'program', accent: '#2F4A55', side: 'bottom' },
+    prog6:         { variant: 'program', accent: '#A98D6B', side: 'bottom' },
+    prog7:         { variant: 'program', accent: '#5E7A87', side: 'bottom' },
     story1:        { variant: 'wide',    accent: '#2F4A55', side: 'right'  }, // carousel cards
     story2:        { variant: 'wide',    accent: '#5E7A87', side: 'right'  },
     story3:        { variant: 'wide',    accent: '#A98D6B', side: 'right'  },
@@ -207,7 +210,9 @@
 
   // sequential panels → wizard navigation (move through them without closing)
   const GROUPS = [
-    ['prog1', 'prog2', 'prog3', 'prog4']
+    ['prog1', 'prog2'],
+    ['prog3', 'prog4'],
+    ['prog5', 'prog6', 'prog7']
   ];
   function groupOf(id) {
     for (const list of GROUPS) { const i = list.indexOf(id); if (i > -1) return { list, index: i }; }
